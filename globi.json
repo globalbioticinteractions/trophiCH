@@ -1,0 +1,129 @@
+{
+  "@context" : [ "http://www.w3.org/ns/csvw", {
+    "@language" : "en"
+  } ],
+  "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+  "tables" : [ {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "01_final_metaweb.tsv.gz",
+    "dcterms:bibliographicCitation" : "Reji Chacko, M., Albouy, C., Altermatt, F., Brändle, M., Casanelles Abella, J., Boussange, V., Campell, F., Ellis, W. N., Fopp, F., Gossner, M. M., Ho., H., Joss, A., Kipf, P., Neff, F., Petrović, A., Prié, V., Tomanović, Ž., Zimmerli, N., Pellissier, L. (2024). trophiCH v1 - a food web for Switzerland. EnviDat. https://www.doi.org/10.16904/envidat.467.",
+    "delimiter" : "\t",
+    "headerRowCount" : 1,
+    "null" : [ "NA" ],
+    "tableSchema" : {
+      "foreignKeys": [{
+            "columnReference": "referenceId",
+            "reference": {
+              "columnReference": "referenceId"
+            }
+      }],
+      "columns" : [ {
+        "name" : "sourceTaxonName",
+        "titles" : "Source_Name",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonRankName",
+        "titles" : "Source_Rank",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceLifeStageName",
+        "titles" : "Source_Life_Stage",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonName",
+        "titles" : "Target_Name",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonRankName",
+        "titles" : "Target_Rank",
+        "datatype" : "string"
+      }, {
+        "name" : "targetLifeStageName",
+        "titles" : "Target_Life_Stage",
+        "datatype" : "string"
+      }, {
+        "name" : "interactionTypeName",
+        "titles" : "Interaction_Type",
+        "datatype" : "string"
+      }, {
+        "name" : "referenceId",
+        "titles" : "Citation",
+        "datatype" : "string",
+        "separator" : ";"
+      }, {
+        "name" : "Inference",
+        "titles" : "Inference",
+        "datatype" : "string"
+      }, {
+        "name" : "ID",
+        "titles" : "ID",
+        "datatype" : "string"
+      }, {
+        "name" : "ID_og",
+        "titles" : "ID_og",
+        "datatype" : "string"
+      } ]
+    }
+  }, {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "references.tsv",
+    "dcterms:bibliographicCitation" : "Reji Chacko, M., Albouy, C., Altermatt, F., Brändle, M., Casanelles Abella, J., Boussange, V., Campell, F., Ellis, W. N., Fopp, F., Gossner, M. M., Ho., H., Joss, A., Kipf, P., Neff, F., Petrović, A., Prié, V., Tomanović, Ž., Zimmerli, N., Pellissier, L. (2024). trophiCH v1 - a food web for Switzerland. EnviDat. https://www.doi.org/10.16904/envidat.467.",
+    "delimiter" : "\t",
+    "headerRowCount" : 1,
+    "null" : [ "NA" ],
+    "tableSchema" : {
+      "primaryKey": "referenceId",
+      "columns" : [ {
+        "name" : "referenceId",
+        "titles" : "Citation",
+        "datatype" : "string"
+      }, {
+        "name" : "referenceCitation",
+        "titles" : "Full Reference",
+        "datatype" : "string"
+      }, {
+        "name" : "Data Type",
+        "titles" : "Data Type",
+        "datatype" : "string"
+      }, {
+        "name" : "Resource Type",
+        "titles" : "Resource Type",
+        "datatype" : "string"
+      }, {
+        "name" : "Resource Type Comment",
+        "titles" : "Resource Type Comment",
+        "datatype" : "string"
+      }, {
+        "name" : "basisOfRecordName",
+        "titles" : "Methods",
+        "datatype" : "string"
+      }, {
+        "name" : "Methods Comment",
+        "titles" : "Methods Comment",
+        "datatype" : "string"
+      }, {
+        "name" : "localityName",
+        "titles" : "Location",
+        "datatype" : "string"
+      }, {
+        "name" : "http://rs.tdwg.org/dwc/terms/eventDate",
+        "titles" : "Year",
+        "datatype" : "string"
+      }, {
+        "name" : "Accession",
+        "titles" : "Accession",
+        "datatype" : "string"
+      }, {
+        "name" : "Accession Type",
+        "titles" : "Accession Type",
+        "datatype" : "string"
+      } ]
+    }
+  } ]
+}

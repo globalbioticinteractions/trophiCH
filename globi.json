@@ -31,7 +31,8 @@
       }, {
         "name" : "sourceLifeStageName",
         "titles" : "Source_Life_Stage",
-        "datatype" : "string"
+        "datatype" : "string",
+        "separator": "and"
       }, {
         "name" : "targetTaxonName",
         "titles" : "Target_Name",
@@ -43,7 +44,8 @@
       }, {
         "name" : "targetLifeStageName",
         "titles" : "Target_Life_Stage",
-        "datatype" : "string"
+        "datatype" : "string",
+        "separator" : "and"
       }, {
         "name" : "interactionTypeName",
         "titles" : "Interaction_Type",

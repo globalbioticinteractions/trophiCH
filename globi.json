@@ -72,7 +72,7 @@
       "@language" : "en"
     } ],
     "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
-    "url" : "references.tsv",
+    "url" : "03_references.tsv",
     "dcterms:bibliographicCitation" : "Reji Chacko, M., Albouy, C., Altermatt, F., Brändle, M., Casanelles Abella, J., Boussange, V., Campell, F., Ellis, W. N., Fopp, F., Gossner, M. M., Ho., H., Joss, A., Kipf, P., Neff, F., Petrović, A., Prié, V., Tomanović, Ž., Zimmerli, N., Pellissier, L. (2024). trophiCH v1 - a food web for Switzerland. EnviDat. https://www.doi.org/10.16904/envidat.467.",
     "delimiter" : "\t",
     "headerRowCount" : 1,
